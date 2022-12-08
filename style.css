@@ -217,7 +217,7 @@ header .navbar ul li a:hover{
 }
 
 .about .row .counter .box span{
-    font-size: 4rem;
+    font-size: 3rem;
     color:var(--yellow);
 }
 
@@ -303,65 +303,34 @@ header .navbar ul li a:hover{
     transform: scale(1.2);
 }
 
-.contact .row{
+.contact .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    padding:2rem 0;
 }
 
-.contact .row .content{
-    flex:1 1 30rem;
-    padding:4rem;
-    padding-bottom: 0;
-}
-
-.contact .row form{
-    flex:1 1 45rem;
-    padding:2rem;
+.contact .box-container .box{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
     margin:2rem;
-    margin-bottom: 4rem;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.contact .row form .box{
-    padding:1.5rem;
-    margin:1rem 0;
-    background:#3333;
-    color:#fff;
-    text-transform: none;
-    font-size: 1.7rem;
+.contact .box-container .box img{
+    height:100%;
     width:100%;
+    object-fit: cover;
 }
 
-.contact .row form .box::placeholder{
-    text-transform: capitalize;
+.contact .box-container .box:hover img{
+    transform: scale(1.2);
 }
 
-.contact .row form .message{
-    height: 15rem;
-    resize: none;
-}
 
-.contact .row .content .title{
-    text-transform: uppercase;
-    color:#fff;
-    font-size: 3rem;
-    padding-bottom: 2rem;
-}
-
-.contact .row .content .info h3{
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    color:#eee;
-    padding:1rem 0;
-    font-weight: normal;
-}
-
-.contact .row .content .info h3 i{
-    padding-right: 1rem;
-    color:var(--yellow);
-}
 
 .top{
     position: fixed;
@@ -452,8 +421,8 @@ header .navbar ul li a:hover{
         width:100%;
     }
 
-    .contact .row form{
-        margin:3rem 0;
+    .contact .box-container .box{
+        width:100%;
     }
 
  }
